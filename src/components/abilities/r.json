@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_abilities_rs",
+  "info": {
+    "displayName": "R",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "cooldown": {
+      "type": "integer"
+    }
+  }
+}

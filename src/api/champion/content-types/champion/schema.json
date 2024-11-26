@@ -1,0 +1,83 @@
+{
+  "kind": "collectionType",
+  "collectionName": "champions",
+  "info": {
+    "singularName": "champion",
+    "pluralName": "champions",
+    "displayName": "Champions",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Champion": {
+      "type": "string",
+      "required": true
+    },
+    "Roles": {
+      "type": "enumeration",
+      "enum": [
+        "Fighter",
+        "Tank",
+        "Mage",
+        "Assassin",
+        "Marksman",
+        "Support"
+      ],
+      "required": true
+    },
+    "Difficulty": {
+      "type": "integer",
+      "default": 0,
+      "max": 10,
+      "min": 1,
+      "required": false
+    },
+    "SplashArt": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Description": {
+      "type": "blocks"
+    },
+    "passif": {
+      "displayName": "passif",
+      "type": "component",
+      "repeatable": false,
+      "component": "abilities.passif"
+    },
+    "Q": {
+      "displayName": "Q",
+      "type": "component",
+      "repeatable": false,
+      "component": "abilities.q"
+    },
+    "W": {
+      "displayName": "W",
+      "type": "component",
+      "repeatable": false,
+      "component": "abilities.w"
+    },
+    "E": {
+      "displayName": "E",
+      "type": "component",
+      "repeatable": false,
+      "component": "abilities.e"
+    },
+    "R": {
+      "displayName": "R",
+      "type": "component",
+      "repeatable": false,
+      "component": "abilities.r"
+    }
+  }
+}

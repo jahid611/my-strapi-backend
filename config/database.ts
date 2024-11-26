@@ -7,10 +7,10 @@ export default ({ env }) => {
     mysql: {
       connection: {
         host: env('DATABASE_HOST', 'localhost'),
-        port: env.int('DATABASE_PORT', 3306),
+        port: env.int('DATABASE_PORT', 3308),
         database: env('DATABASE_NAME', 'strapi'),
         user: env('DATABASE_USERNAME', 'strapi'),
-        password: env('DATABASE_PASSWORD', 'strapi'),
+        password: env('DATABASE_PASSWORD', 'strapipassword'),
         ssl: env.bool('DATABASE_SSL', false) && {
           key: env('DATABASE_SSL_KEY', undefined),
           cert: env('DATABASE_SSL_CERT', undefined),
